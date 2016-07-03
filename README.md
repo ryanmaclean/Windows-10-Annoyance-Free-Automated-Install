@@ -1,10 +1,15 @@
 # Windows 10 Professional Annoyance-Free Automated USB Install
+
+## Introduction
 A guide to creating a Windows 10 install without all of the "extras" - disabled One Drive, Soda Crush, etc
 
 ## Download Windows 10
+Use the Windows media creation tool to get a copy of Windows 10
 ## Download Virtual Box
+We'll use Virtual box to prepare the USB stick because it runs on Windows, Mac and Linux
 ## Download Plop
-## Prepare USB Stick
+As we're using Virtual Box, we'll bootstrap the USB boot when testing with a tiny ISO. Note that on some platforms you can get this done with the Virtual Box tools and accepting a further agreement. 
+## Create a Test Virtual Machine
 ## First Boot
 ## Audit Modes
 ## Default Profile
