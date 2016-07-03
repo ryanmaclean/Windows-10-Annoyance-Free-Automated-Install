@@ -29,7 +29,7 @@ Create a Windows 10 64bit virtual machine in Virtual Box, making sure to attach 
 ## First Boot
 Continue the install as usual until you are met with the "express"/"custom install" screen. At this point press ctrl+shift+f3 in order to get into audit mode. 
 ## Audit Modes
-You be presented with a sysprep window - simply cancel it for now. 
+You will be presented with a sysprep window - simply cancel it for now. 
 ## Default Profile
 Make the changes you want to see in default profiles now. 
 
