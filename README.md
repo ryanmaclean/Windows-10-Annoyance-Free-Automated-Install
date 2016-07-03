@@ -28,11 +28,14 @@ Continue the install as usual until you are met with the "express"/"custom insta
 ## Audit Modes
 You be presented with a sysprep window - simply cancel it for now. 
 ## Default Profile
-Mkae the changes you want to see in default profiles now. 
+Make the changes you want to see in default profiles now. 
 
-Specifically:
-* Run O&O Shutup 10 like so: `oosh10.exe /silent /config auto.cfg`
+Steps to take:
+* Start a command prompt by pressing win+r, then typing "cmd"
+* Run O&O Shutup 10 like so: `e:/oosh10.exe /silent /config auto.cfg`
 * Disable the consumer content (games, etc.): `regedit /s e:/disableconsumerfeatures.reg`
+* 
+
 ## Sysprep
 ## Unattended Configuration File
 ## Image to WIM
