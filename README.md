@@ -35,7 +35,7 @@ Steps to take:
 * Start a command prompt by pressing win+r, then typing "cmd"
 * Run O&O Shutup 10 like so: `e:/oosh10.exe /silent /config auto.cfg`
 * Disable the consumer content (games, etc.): `regedit /s e:/disableconsumerfeatures.reg`
-* 
+* Uninstall OneDrive: `e:/uninstall_onedrive.bat`
 
 ## Sysprep
 ## Unattended Configuration File
