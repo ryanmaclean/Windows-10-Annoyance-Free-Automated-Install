@@ -46,7 +46,10 @@ Add this file to the root of your USB stick.
 ## Image to WIM
 ## Convert to ESD
 ## Test Install
+Finally, test the installation one last time by removing your virtual hard drive and creating a new one - this will make sure the changes made in our captured install are no longer present. No need for "ctrl+shift+f3" - just install as you would normally, minus all of the nags, prompts and apps installed post-setup. 
 ## Using the USB Disk
+You can use this USB stick whenever you want to perofrm a new Windows 10 install!
+
 ## Resources Used 
 
 * https://blogs.technet.microsoft.com/mniehaus/2015/11/11/removing-windows-10-in-box-apps-during-a-task-sequence/
