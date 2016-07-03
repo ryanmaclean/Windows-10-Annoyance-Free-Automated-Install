@@ -63,3 +63,4 @@ You can use this USB stick whenever you want to perofrm a new Windows 10 install
 * http://winaero.com/blog/fix-windows-10-installs-apps-like-candy-crush-soda-saga-automatically/
 * https://www.oo-software.com/en/shutup10
 * https://www.winreducer.net/winreducer-es-wim-converter.html
+* http://answers.microsoft.com/en-us/onedrive/forum/odoptions-oddesktop/how-to-uninstall-onedrive-completely-in-windows-10/e735a3b8-09f1-40e2-89c3-b93cf7fe6994
