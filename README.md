@@ -1,10 +1,16 @@
 # Windows 10 Professional Annoyance-Free Automated USB Install
 
 ## Introduction
-A guide to creating a Windows 10 install without all of the "extras" - disabled One Drive, Soda Crush, etc
+A guide to creating a Windows 10 install without all of the "extras" - disabled One Drive, Soda Crush, etc.
+
+I've included two sample files that can be used once you have a Windows 10 install USB stick created: `autounattend.xml` and `customize.xml`.
+
+Note, however, that they are customized to my liking. In particular, you will want to query/replace the username `winadmin` and the password `muggles` from within `autounattend.xml`. Otherwise, I think the defaults are pretty rational. 
+
+Should you wish to simply make your own starter file, the [Windows Answer File Generator](http://windowsafg.no-ip.org/win10x86_x64.html) is a big help. 
 
 ## Download Windows 10
-Use the Windows media creation tool to get a copy of Windows 10
+Use the Windows media creation tool to get a copy of Windows 10. 
 ## Download Virtual Box
 We'll use Virtual box to prepare the USB stick because it runs on Windows, Mac and Linux
 ## Download Plop
