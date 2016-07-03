@@ -4,7 +4,8 @@
 A guide to creating a Windows 10 install without all of the "extras" - disabled One Drive, Soda Crush, etc.
 
 ## Download Windows 10
-Use the Windows media creation tool to get a copy of Windows 10. 
+Use the Windows media creation tool to get a copy of Windows 10. Once your media is created, git clone this repository (or donwload a zip) and add all of the files to the root of the USB stick. 
+
 ## A Head Start
 I've included two sample files that can be used once you have a Windows 10 install USB stick created: `autounattend.xml` and `customize.xml`.
 
