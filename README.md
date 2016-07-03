@@ -72,3 +72,4 @@ You can use this USB stick whenever you want to perofrm a new Windows 10 install
 * https://en.wikibooks.org/wiki/Windows_Batch_Scripting#Functions
 * https://ndswanson.wordpress.com/2014/10/24/inject-drivers-to-windows-10-install-media/
 * https://dismgui.codeplex.com/releases/view/133331
+* https://github.com/dfkt/win10-unfuck/blob/master/4chan-g-scripts-UNTESTED/Debloat-Windows10.ps1
