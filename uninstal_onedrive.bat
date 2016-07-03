@@ -4,7 +4,7 @@
 ::
 :: And:
 :: http://www.msfn.org/board/topic/129674-how-can-i-identify-if-os-is-32-bit-or-64-bit-in-batch-file/
-::
+
 :: Kill the task if running
 taskkill /f /im OneDrive.exe
 
