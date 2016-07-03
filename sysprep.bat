@@ -1,0 +1,1 @@
+%windir%\system32\sysprep\sysprep.exe /generalize /oobe /reboot /unattend:e:\customize.xml
