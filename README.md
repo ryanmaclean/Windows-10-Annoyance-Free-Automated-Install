@@ -67,3 +67,4 @@ You can use this USB stick whenever you want to perofrm a new Windows 10 install
 * https://www.winreducer.net/winreducer-es-wim-converter.html
 * http://answers.microsoft.com/en-us/onedrive/forum/odoptions-oddesktop/how-to-uninstall-onedrive-completely-in-windows-10/e735a3b8-09f1-40e2-89c3-b93cf7fe6994
 * https://en.wikibooks.org/wiki/Windows_Batch_Scripting#Functions
+* https://ndswanson.wordpress.com/2014/10/24/inject-drivers-to-windows-10-install-media/
