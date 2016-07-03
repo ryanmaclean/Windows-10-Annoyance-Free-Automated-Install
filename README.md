@@ -9,6 +9,8 @@ Note, however, that they are customized to my liking. In particular, you will wa
 
 Should you wish to simply make your own starter file, the [Windows Answer File Generator](http://windowsafg.no-ip.org/win10x86_x64.html) is a big help. 
 
+Furthermore, the `sysprep.bat` and `customize.xml` files assumes that you've only got one CDROM, one HDD and one USB stick attached to your Virtual Box VM. If this is not the case, chances are you're WIM file will not be located in `E:/sources/install.wim#Windows 10 Pro` and the sysprep command parameter `/unattend:e:\customize.xml` should also be edited in turn. 
+
 ## Download Windows 10
 Use the Windows media creation tool to get a copy of Windows 10. 
 ## Download Virtual Box
