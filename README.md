@@ -15,6 +15,10 @@ As we're using Virtual Box, we'll bootstrap the USB boot when testing with a tin
 ## Default Profile
 ## Sysprep
 ## Unattended Configuration File
+## Image to WIM
+## Convert to ESD
+## Test Install
+## Using the USB Disk
 ## Resources Used 
 
 * https://blogs.technet.microsoft.com/mniehaus/2015/11/11/removing-windows-10-in-box-apps-during-a-task-sequence/
@@ -27,3 +31,4 @@ As we're using Virtual Box, we'll bootstrap the USB boot when testing with a tin
 * https://github.com/alek-sys/sublimetext_indentxml
 * http://winaero.com/blog/fix-windows-10-installs-apps-like-candy-crush-soda-saga-automatically/
 * https://www.oo-software.com/en/shutup10
+* https://www.winreducer.net/winreducer-es-wim-converter.html
