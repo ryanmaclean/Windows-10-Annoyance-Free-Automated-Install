@@ -12,3 +12,4 @@ Resources used:
 * http://windowsafg.no-ip.org/win10x86_x64.html
 * https://github.com/alek-sys/sublimetext_indentxml
 * http://winaero.com/blog/fix-windows-10-installs-apps-like-candy-crush-soda-saga-automatically/
+* https://www.oo-software.com/en/shutup10
