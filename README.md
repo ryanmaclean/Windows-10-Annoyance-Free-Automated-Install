@@ -1,7 +1,16 @@
 # Windows 10 Professional Annoyance-Free Automated USB Install
 A guide to creating a Windows 10 install without all of the "extras" - disabled One Drive, Soda Crush, etc
 
-Resources used: 
+## Download Windows 10
+## Download Virtual Box
+## Download Plop
+## Prepare USB Stick
+## First Boot
+## Audit Modes
+## Default Profile
+## Sysprep
+## Unattended Configuration File
+## Resources Used 
 
 * https://blogs.technet.microsoft.com/mniehaus/2015/11/11/removing-windows-10-in-box-apps-during-a-task-sequence/
 * http://www.tenforums.com/tutorials/3020-windows-10-image-customize-audit-mode-sysprep.html
