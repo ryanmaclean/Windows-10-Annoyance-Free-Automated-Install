@@ -9,7 +9,7 @@ The goal of this setup was to create a USB key that could be used to easily crea
 Use the [Windows media creation tool](https://www.microsoft.com/en-ca/software-download/windows10) to get a copy of Windows 10. Once your media is created, git clone this repository (or donwload a zip) and add all of the files to the root of the USB stick. 
 
 ## O&O Shut Up 10
-I used [O&O Shut Up 10](https://www.oo-software.com/en/shutup10) to take care of many of the annoyances here, using the `ooshutup10.cfg` file as a parameter. Download this tool and place it in the root of the USB stick as well. 
+I used [O&O Shut Up 10](https://www.oo-software.com/en/shutup10) to take care of many of the annoyances here, using the `ooshutup10.cfg` file as a parameter. Download this tool, unzip it and place the `OOSU10.exe` file in the root of the USB stick as well. 
 
 ## A Head Start
 I've included two sample files that can be used once you have a Windows 10 install USB stick created: `autounattend.xml` and `customize.xml`.
@@ -38,7 +38,7 @@ Make the changes you want to see in default profiles now.
 
 Steps to take:
 * Start a command prompt by pressing win+r, then typing "cmd"
-* Run O&O Shutup 10 like so: `e:/oosh10.exe /silent /config ooshutup10.cfg`
+* Run O&O Shutup 10 like so: `e:/OOSU10.exe /silent /config ooshutup10.cfg`
 * Disable the consumer content (games, etc.): `regedit /s e:/disableconsumerfeatures.reg`
 * Uninstall OneDrive: `e:/uninstall_onedrive.bat`
 
