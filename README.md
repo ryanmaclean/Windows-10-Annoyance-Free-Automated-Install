@@ -13,6 +13,8 @@ Note, however, that they are customized to my liking. In particular, you will wa
 Should you wish to simply make your own starter file, the [Windows Answer File Generator](http://windowsafg.no-ip.org/win10x86_x64.html) is a big help. 
 
 Furthermore, the `sysprep.bat` and `customize.xml` files assumes that you've only got one CDROM, one HDD and one USB stick attached to your Virtual Box VM. If this is not the case, chances are your WIM file will not be located in `E:/sources/install.wim#Windows 10 Pro` and the sysprep command parameter `/unattend:e:\customize.xml` should also be edited in turn. 
+
+You can stop here if it worked for you, otherwise, continue along for testing, and modifications. 
 ## Download Virtual Box
 We'll use Virtual Box to prepare the USB stick because it runs on [Windows](http://download.virtualbox.org/virtualbox/5.0.24/VirtualBox-5.0.24-108355-Win.exe), [Mac](http://download.virtualbox.org/virtualbox/5.0.24/VirtualBox-5.0.24-108355-OSX.dmg) and [Linux](https://www.virtualbox.org/wiki/Linux_Downloads)
 ## Download Plop
@@ -20,9 +22,17 @@ As we're using Virtual Box, we'll bootstrap the USB boot when testing with a tin
 
 Once downloaed, unzip the ISO to a location you'll use in a moment when creating your virtual machine.
 ## Create a Test Virtual Machine
+Create a Windows 10 64bit virtual machine in Virtual Box, making sure to attach you newly-created USB stick to it.
 ## First Boot
+Continue the install as usual until you are met with the "express"/"custom install" screen. At this point press ctrl+shift+f3 in order to get into audit mode. 
 ## Audit Modes
+You be presented with a sysprep window - simply cancel it for now. 
 ## Default Profile
+Mkae the changes you want to see in default profiles now. 
+
+Specifically:
+* Run O&O Shutup 10 like so: `oosh10.exe /silent /config auto.cfg`
+* Disable the consumer content (games, etc.): `regedit /s e:/disableconsumerfeatures.reg`
 ## Sysprep
 ## Unattended Configuration File
 ## Image to WIM
