@@ -38,7 +38,11 @@ Steps to take:
 * Uninstall OneDrive: `e:/uninstall_onedrive.bat`
 
 ## Sysprep
+Once you are done customizing your default user, run the sysprep command by double-clicking on `sysprep.bat` in your USB stick. 
 ## Unattended Configuration File
+Now it's time to create your unattended config file. You can use mine, but you may be better served using the wizard here: http://windowsafg.no-ip.org/win10x86_x64.html 
+
+Add this file to the root of your USB stick. 
 ## Image to WIM
 ## Convert to ESD
 ## Test Install
