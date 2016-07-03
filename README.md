@@ -1,7 +1,9 @@
 # Windows 10 Professional Annoyance-Free Automated USB Install
 
 ## Introduction
-A guide to creating a Windows 10 install without all of the "extras" - disabled One Drive, Soda Crush, etc.
+A guide to creating a Windows 10 install without all of the "extras" - disabled One Drive, Soda Crush, etc., as well as turning off annoying prompts and online account registration. 
+
+The goal of this setup was to create a USB key that could be used to easily create a hassle-free desktop install method for a gaming PC, but may suit other purposes as well. 
 
 ## Download Windows 10
 Use the [Windows media creation tool](https://www.microsoft.com/en-ca/software-download/windows10) to get a copy of Windows 10. Once your media is created, git clone this repository (or donwload a zip) and add all of the files to the root of the USB stick. 
