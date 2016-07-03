@@ -14,9 +14,11 @@ Should you wish to simply make your own starter file, the [Windows Answer File G
 
 Furthermore, the `sysprep.bat` and `customize.xml` files assumes that you've only got one CDROM, one HDD and one USB stick attached to your Virtual Box VM. If this is not the case, chances are your WIM file will not be located in `E:/sources/install.wim#Windows 10 Pro` and the sysprep command parameter `/unattend:e:\customize.xml` should also be edited in turn. 
 ## Download Virtual Box
-We'll use Virtual Box to prepare the USB stick because it runs on [Windows](http://download.virtualbox.org/virtualbox/5.0.24/VirtualBox-5.0.24-108355-Win.exe), [Mac](http://download.virtualbox.org/virtualbox/5.0.24/VirtualBox-5.0.24-108355-OSX.dmg) and [Linux}(https://www.virtualbox.org/wiki/Linux_Downloads)
+We'll use Virtual Box to prepare the USB stick because it runs on [Windows](http://download.virtualbox.org/virtualbox/5.0.24/VirtualBox-5.0.24-108355-Win.exe), [Mac](http://download.virtualbox.org/virtualbox/5.0.24/VirtualBox-5.0.24-108355-OSX.dmg) and [Linux](https://www.virtualbox.org/wiki/Linux_Downloads)
 ## Download Plop
-As we're using Virtual Box, we'll bootstrap the USB boot when testing with a tiny ISO. Note that on some platforms you can get this done with the Virtual Box tools and accepting a further agreement. 
+As we're using Virtual Box, we'll bootstrap the USB boot when testing with a tiny [Plop Boot Manager ISO](https://download.plop.at/files/bootmngr/plpbt-5.0.15.zip). Note that on some platforms you can get this done with the Virtual Box tools and accepting a further agreement. 
+
+Once downloaed, unzip the ISO to a location you'll use in a moment when creating your virtual machine.
 ## Create a Test Virtual Machine
 ## First Boot
 ## Audit Modes
