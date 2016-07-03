@@ -1,7 +1,10 @@
 :: Uninstall OneDrive on both 32bit and 64bit Systems
 :: Some of this script pulled directly from:
 :: http://answers.microsoft.com/en-us/onedrive/forum/odoptions-oddesktop/how-to-uninstall-onedrive-completely-in-windows-10/e735a3b8-09f1-40e2-89c3-b93cf7fe6994
-
+::
+:: And:
+:: http://www.msfn.org/board/topic/129674-how-can-i-identify-if-os-is-32-bit-or-64-bit-in-batch-file/
+::
 :: Kill the task if running
 taskkill /f /im OneDrive.exe
 
