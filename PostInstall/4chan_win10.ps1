@@ -191,6 +191,7 @@ function Tweak-Settings($isenable)
         New-ItemProperty -ErrorAction SilentlyContinue -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" -Name "DownloadMode" -PropertyType DWORD -Value 0 | Out-Null
         Set-ItemProperty -ErrorAction SilentlyContinue -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" -Name "DODownloadMode" -Value 0 | Out-Null
         Set-ItemProperty -ErrorAction SilentlyContinue -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\" -Name "SystemSettingsDownloadMode" -Value 0 | Out-Null
+        Set-ItemProperty -ErrorAction SilentlyContinue -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager\" -Name "SystemPaneSuggestionsEnabled" -Value 0 | Out-Null
         
         Write-Progress -Activity "Tweaking settings app" -Status "Progress:" -PercentComplete 15
     }
@@ -850,4 +851,4 @@ Customize-Windows $customize
 Remove-Features $features
 
 Write-Host "FINISHED DEBLOATING" -ForegroundColor Green
-Write-Host  "Debloat complete. Please restart your system to make sure everything works properly." -ForegroundColor Pink
+Read-Host  "Debloat complete. Please restart your system to make sure everything works properly."
