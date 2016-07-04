@@ -850,4 +850,4 @@ Customize-Windows $customize
 Remove-Features $features
 
 Write-Host "FINISHED DEBLOATING" -ForegroundColor Green
-Read-Host  "Debloat complete. Please restart your system to make sure everything works properly."
+Write-Host  "Debloat complete. Please restart your system to make sure everything works properly." -ForegroundColor Pink
