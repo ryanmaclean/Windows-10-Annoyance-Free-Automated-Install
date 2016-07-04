@@ -26,7 +26,6 @@
           It might take 5 minutes to pop up but you have to wait for it to install completely so we can nuke it properly.
           You'll know when it's done, because you'll have an icon in the bottom right tray bar.
 	CHANGELOG
-	7/1/2016, 1.6.0.0 | Cosmetic fixes
 	8/5/2015, 1.4.0.0	| tested with installing KB3081424 after script+reboot; no issues, no reset of settings
                           settings: disabled sharing updates in local area network
                           customize: added the old windows 7-8.1 volume mixer
@@ -772,7 +771,23 @@ function Remove-Features($isenable)
         Dism /online /Disable-Feature /FeatureName:WorkFolders-Client /quiet /norestart
         # Enabling .NET 3.5 framework because a lot of programs still use it
         Dism /online /Enable-Feature /FeatureName:NetFx3 /quiet /norestart
-
+        # Remove any installed apps that aren't needed
+        Get-AppxPackage *3d* | Remove-AppxPackage
+        Get-AppxPackage *alarms* | Remove-AppxPackage
+        Get-AppxPackage *bing* | Remove-AppxPackage
+        Get-AppxPackage *calc* | Remove-AppxPackage
+        Get-AppxPackage *camera* | Remove-AppxPackage
+        Get-AppxPackage *communi* | Remove-AppxPackage
+        Get-AppxPackage *maps* | Remove-AppxPackage
+        Get-AppxPackage *note* | Remove-AppxPackage
+        Get-AppxPackage *people* | Remove-AppxPackage
+        Get-AppxPackage *phone* | Remove-AppxPackage
+        Get-AppxPackage *photo* | Remove-AppxPackage
+        Get-AppxPackage *solit* | Remove-AppxPackage
+        Get-AppxPackage *soundrec* | Remove-AppxPackage
+        Get-AppxPackage *store* | Remove-AppxPackage
+        Get-AppxPackage *xbox* | Remove-AppxPackage
+        Get-AppxPackage *zune* | Remove-AppxPackage
         Write-Progress -Activity "Removing features" -Status "Progress:" -PercentComplete 100
     }
 }
