@@ -772,22 +772,67 @@ function Remove-Features($isenable)
         # Enabling .NET 3.5 framework because a lot of programs still use it
         Dism /online /Enable-Feature /FeatureName:NetFx3 /quiet /norestart
         # Remove any installed apps that aren't needed
-        Get-AppxPackage *3d* | Remove-AppxPackage
-        Get-AppxPackage *alarms* | Remove-AppxPackage
-        Get-AppxPackage *bing* | Remove-AppxPackage
-        Get-AppxPackage *calc* | Remove-AppxPackage
-        Get-AppxPackage *camera* | Remove-AppxPackage
-        Get-AppxPackage *communi* | Remove-AppxPackage
-        Get-AppxPackage *maps* | Remove-AppxPackage
-        Get-AppxPackage *note* | Remove-AppxPackage
-        Get-AppxPackage *people* | Remove-AppxPackage
-        Get-AppxPackage *phone* | Remove-AppxPackage
-        Get-AppxPackage *photo* | Remove-AppxPackage
-        Get-AppxPackage *solit* | Remove-AppxPackage
-        Get-AppxPackage *soundrec* | Remove-AppxPackage
-        Get-AppxPackage *store* | Remove-AppxPackage
-        Get-AppxPackage *xbox* | Remove-AppxPackage
-        Get-AppxPackage *zune* | Remove-AppxPackage
+
+        $apps = @(
+            # default Windows 10 apps
+            "Microsoft.3DBuilder"
+            "Microsoft.Appconnector"
+            "Microsoft.BingFinance"
+            "Microsoft.BingNews"
+            "Microsoft.BingSports"
+            "Microsoft.BingWeather"
+            "Microsoft.Getstarted"
+            "Microsoft.MicrosoftOfficeHub"
+            "Microsoft.MicrosoftSolitaireCollection"
+            "Microsoft.Office.OneNote"
+            "Microsoft.People"
+            "Microsoft.SkypeApp"
+            #"Microsoft.Windows.Photos"
+            "Microsoft.WindowsAlarms"
+            #"Microsoft.WindowsCalculator"
+            "Microsoft.WindowsCamera"
+            "Microsoft.WindowsMaps"
+            "Microsoft.WindowsPhone"
+            "Microsoft.WindowsSoundRecorder"
+            #"Microsoft.WindowsStore"
+            "Microsoft.XboxApp"
+            "Microsoft.ZuneMusic"
+            "Microsoft.ZuneVideo"
+            "microsoft.windowscommunicationsapps"
+            "Microsoft.MinecraftUWP"
+
+            # Threshold 2 apps
+            "Microsoft.CommsPhone"
+            "Microsoft.ConnectivityStore"
+            "Microsoft.Messaging"
+            "Microsoft.Office.Sway"
+
+            # non-Microsoft
+            "9E2F88E3.Twitter"
+            "Flipboard.Flipboard"
+            "ShazamEntertainmentLtd.Shazam"
+            "king.com.CandyCrushSaga"
+            "king.com.CandyCrushSodaSaga"
+            "king.com.*"
+            "ClearChannelRadioDigital.iHeartRadio"
+
+            # apps which cannot be removed using Remove-AppxPackage
+            #"Microsoft.BioEnrollment"
+            #"Microsoft.MicrosoftEdge"
+            #"Microsoft.Windows.Cortana"
+            #"Microsoft.WindowsFeedback"
+            #"Microsoft.XboxGameCallableUI"
+            #"Microsoft.XboxIdentityProvider"
+            #"Windows.ContactSupport"
+        )
+
+        foreach ($app in $apps) {
+            Get-AppxPackage -Name $app -AllUsers | Remove-AppxPackage
+
+            Get-AppXProvisionedPackage -Online |
+                where DisplayName -EQ $app |
+                Remove-AppxProvisionedPackage -Online
+        }
         Write-Progress -Activity "Removing features" -Status "Progress:" -PercentComplete 100
     }
 }
