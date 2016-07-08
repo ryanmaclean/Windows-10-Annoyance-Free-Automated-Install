@@ -7,7 +7,7 @@ The goal of this setup was to create a USB key that could be used to easily crea
 
 ## TOO LONG, WON'T READ
 
-Fair enough, if you've already got Windows installed and want to rid it of the numerous annoyances with one quick script, you can find that in the "PostInstall" folder. This script is from [4chan](http://boards.4chan.org/g/thread/49538199/windows-10-general-thread-30) and is actually very handy, but my goal is to stop this from happening in the first place, rather than fixing it after the fact.
+Fair enough, if you've already got Windows installed (or upgraded from something else, perchance?) and want to rid it of the numerous annoyances with one quick script, you can find that in the "PostInstall" folder. This script is from [4chan](http://boards.4chan.org/g/thread/49538199/windows-10-general-thread-30) and is actually very handy, but my goal is to stop this from happening in the first place, rather than fixing it after the fact.
 
 To run it: 
 * Press the Windows key
